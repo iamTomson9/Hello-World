@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/index.js">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Nairobi</title>
+    <style>
+      /* ======== Media Queries */
+@media only screen and (min-width : 240px) {
+
+h1 {
+    font: 500 200%/100% Ubuntu;
+    margin: 0 0 30px 10px;
+}
+
+label {
+  display: block;
+  margin: 0 0 10px 10px;
+}
+
+#contact label {
+  width: 23%;
+  font-size: 150%;
+  text-align: left;
+}
+
+#contact input[type=text],
+#contact input[type=email],
+#contact textarea {
+  width: 94.3%;
+  font-size: 100%;
+  margin-left: 10px;		
+}
+
+#contact .button {
+  margin-left: 10px;
+  font-size: 130%;
+}
+}
+
+
+@media only screen and (min-width : 480px) {
+
+h1 {
+    font: 500 160%/100% Ubuntu;
+    margin: 0 0 20px 10px;
+}
+
+label,
+input{display: inline-block}
+
+#contact label {
+  font-size: 100%;
+  width: 20%;
+  text-align: right;
+}
+
+#contact label[for=message] {vertical-align: top}
+  
+#contact input[type=text],
+#contact input[type=email],
+#contact textarea {			
+    width: 66.6667%;
+}
+
+#contact .button {
+  margin-left: 24%;
+  font-size: 90%;
+}
+}
+
+
+.containers {
+  max-width: 600px;
+  margin: 3.33334% auto;
+}
+
+/* ======== Divider */
+.line {
+  clear: both;
+  padding: 15px 0;
+  border-top: 1px solid #EBEBEB;
+}
+
+/* ======== inputs */
+#contact input[type=text],
+#contact input[type=email],
+#contact textarea {
+  color: #666;		
+  box-sizing: border-box;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  padding: 5px 8px;
+}
+
+#contact input[type=text],
+#contact input[type=email]{height: 40px}
+
+#contact textarea {
+  height: 200px;
+  min-height: 200px;
+  font-family: Ubuntu;
+  overflow: auto; /* Removing default Scrollbar from IE */
+}
+
+#contact input[type=text]:focus,
+#contact input[type=email]:focus,
+#contact textarea:focus {
+  outline: none;
+  box-shadow: inset 1px 2px 3px #CCC;
+}
+
+/* Submit button */
+#contact .button {
+  padding: 10px 15px;
+  border: 1px solid #1A4F82;
+  border-radius: 3px;
+  color: #CFE6FC;
+  font-family: Ubuntu;
+  font-weight: 300;
+  background-color: #1A4F82;
+  background-image: linear-gradient(#215F9C, #1A4F82);
+  -o-background-image: linear-gradient(#215F9C, #1A4F82);
+  cursor: pointer;
+}
+
+#contact .button:hover {
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  background-image: linear-gradient(#2B75BD, #1F5F9C);
+  -o-background-image: linear-gradient(#2B75BD, #1F5F9C);
+  color: #FFF;
+  box-shadow: 2px 2px 3px #999;
+}
+  </style>
+</head>
+<body>
+   <header>
+   <div class="container">
+       <div id="logo">
+        <h1><a href="index.html"><span class="active"></span></a></h1>
+       </div>
+       <nav>
+           <label for="toggle" class="bar"><i class="fas fa-bars"></i></label>
+           <input type="checkbox" id="toggle">
+           <div class="nav-menu">
+            <ul>
+              <li ><a href="index.html">Home</a></li>
+              <li ><a href="lifestyle.html">Lifestyle</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li class="active"><a href="feedback.html">Connect</a></li>
+          </ul>
+           </div>
+       </nav>
+   </div>
+   </header>
+   
+  
+   <div class="body-img"> 
+    <section id="home-view">
+        <div class="container">
+         
+         <div class="home-description">
+             <p>2021</p>
+             <h1>Nairobi</h3>
+              <ul>Green City in the Sun</li>
+              </ul>
+              <p id="description">Nairobi was founded in 1899 by the colonial authorities in
+                 British East Africa, as a rail depot on the Uganda Railway.</p> 
+              </ul><br>
+              <button><i class="fas fa-play"></i>The Green City</button> <i class="fas fa-ellipsis-h"></i> In The Sun
+         </div>
+       </div>
+    </section>
+  </div>
+
+  <div class="form1">
+    <div class="container"><br>
+        <h1> Connect with us </h1>
+        <form id="contact" method="post"  action="thankyou.html">
+
+                <div class="line">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="line">
+                        <label for="email">e-Mail: </label>
+                        <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="line">
+                        <label for="message">Country and region: </label>
+                        <textarea name="country" id="message" rows="3" cols="10" required></textarea>
+                </div>
+
+                <div class="line">
+                        <input type="submit" name="submit" value="Submit" class="button">
+                </div>
+
+        </form>
+</div>
+</div>
+<footer class="footer">
+    
+  <ul class="r-footer">
+  <li>
+    <h2>
+  About</h2>
+  <ul class="box">
+  <li><a href="./pages/culture.html">Culture</a></li>
+  <li><a href="./pages/history.html">history</a></li>
+  </ul>
+  </li>
+  <li class="features">
+    <h2>
+  Information</h2>
+  <ul class="box h-box">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="lifestyle.html">Lifestyle</a></li>
+  <li><a href="events.html">Events</a></li>
+  <li><a href="connect.html">Connect</a></li>
+  </ul>
+  </li>
+  </ul>
+  <div class="b-footer">
+  <p>
+  All rights reserved by ©Nairobicity </p>
+  </div>
+  </footer>
+  
+</body>
+
+</html>
